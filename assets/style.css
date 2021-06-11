@@ -6,8 +6,14 @@
     font-family: 'Mont-bold';
     src: url(../assets/fonts/Mont-Bold.woff2);
 }
+@font-face {
+    font-family: 'Mont-light';
+    src: url(../assets/fonts/Mont-light.woff2);
+}
+
 
 body{
+    background-color: #14131A;
     color: #fff;
     font-family: 'Mont-regular';
 }
@@ -98,4 +104,103 @@ body{
 
 .blood{
     background: url(../assets/images/blood.png) no-repeat top right ,#14131A url(../assets/images/background.png) no-repeat center center / 100%;
+}
+
+.blood-about{
+    background: #14131A url(../assets/images/background.png) no-repeat center center / 100%;
+}
+
+.content{
+    display: flex;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.content-title{
+    font-family: 'Mont-bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 46px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 17px;
+}
+.content-text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 469px;
+    margin-bottom: 30px;
+}
+.content-subtitle{
+    font-family: 'Mont-bold';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.content .list{
+    list-style: none;
+    padding: 0;
+}
+
+.list-item{
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Mont-light';
+    font-weight: 300;
+}
+
+.column-2 {
+    -webkit-column-count: 2 ;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 20px;
+    max-width: 350px;
+}
+.content .trailer{
+    width: 356px;
+    height: 205px;
+    background: url(../assets/images/trailer-cover.jpg) no-repeat center / contain;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+}
+.trailer .play{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.trailer .play-icon{
+    transform: translate(0.5px, 2px);
+}
+
+.poster-wrapper{
+    display: flex;
+    align-items: start;
+}
+.poster{
+    width: 362px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.poster-wrapper .content-subtitle{
+    margin-bottom: 5px;
+}
+.poster-wrapper .content-text{
+    margin-bottom: 20px;
+}
+.poster-wrapper .list{
+    margin: 0;
+    margin-bottom: 20px;
 }
